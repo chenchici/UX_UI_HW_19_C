@@ -65,7 +65,7 @@ left: 5px;
   font-size: 24px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   padding-right: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_2006.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_2025.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 900px;
