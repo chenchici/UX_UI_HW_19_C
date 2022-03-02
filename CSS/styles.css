@@ -42,6 +42,7 @@ left: 5px;
 }
 .sidenav i:hover {
     color: white;
+    box-shadow:rgba(255, 255, 255, 0.6);;
 }
 
 .sidenav a {
@@ -58,14 +59,15 @@ left: 5px;
 
 .sidenav a:hover {
   color: white;
+  size: 120%;
 }
 
 .main {
-  margin-left: 100px; /* Same as the width of the sidenav */
-  font-size: 24px; /* Increased text to enable scrolling */
+  margin-left: 100px; 
+  font-size: 22px; 
   padding: 0px 10px;
   padding-right: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_2006.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/IMG_2025.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   height: 900px;
@@ -74,7 +76,9 @@ left: 5px;
 
 .grid-container {
 display: grid;
-grid-template-rows: 300px 180px ;
+grid-template-rows: 350px 180px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 .mrow {
 flex: 20%;
@@ -91,7 +95,7 @@ object-fit: contain;
 
 }
 .container{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .library {
@@ -101,31 +105,19 @@ margin-top: 50px;
 
 .mcontainer {
 display:flex;
-width: auto ;
+width:auto;
 height: 250px;
+grid-column: 5 / span 4;
 object-fit: contain;
-}
 
+}
 .mcontainer img {
-height: 250px;
+height: 220px;
 width: auto;
 object-fit: contain;
-}
-
-.button {
-margin-left: 50px;
-background-color: #9146FF;
-border-radius: 20px;
-height: 50px;
-width: 250px;
-text-align: center;
-font-size: 36px;
-padding-top: 10px;
 
 }
-.button:hover {
-box-shadow: 5px 10px 18px white;
-}
+
 .cards {
 margin:  auto;
 max-width: 630px;
@@ -218,7 +210,7 @@ color: #280F32;
   }
 
   .btn {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     color: #9146FF;
   }   
   
@@ -240,8 +232,65 @@ color: #280F32;
     color: white;
   }
   .border {
-    height: 50px;
-    width: ;
-    color:#9146FF
-    
+    height: 10px;
+   background-color:#9146FF;
+   margin-bottom: 30px;
+  
+  }
+  .footer {
+    float: right;
+    align-items: center;
+  }
+  
+  .button {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  } 
+  
+  @-webkit-keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-5px);}
+  } 
+  
+  @keyframes bounce { 
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+  } 
+  
+  .bounce { 
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+  
+  #animated-example {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      position: relative;
+      top: 100px;
+      left: 100px;
+      border-radius: 50%;
+  }
+
+#button {
+  margin-left: 50px;
+  background-color: #9146FF;
+  border-radius: 20px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 10px;
+  animation: ;
+  
+  }
+  .button:hover {
+  box-shadow: 5px 10px 15px white;
+  
   }
